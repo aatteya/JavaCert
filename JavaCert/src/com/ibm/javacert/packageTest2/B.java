@@ -7,7 +7,7 @@ package com.ibm.javacert.packageTest2;
  * @author AhmedAtteya
  *
  */
-public class B {
+public class B extends Thread implements Runnable {
 	
 	public String name;
 	String code;
@@ -22,7 +22,7 @@ public class B {
 		this.id = id;
 	}
 	
-	public void setName(String name){
+	public void setBName(String name){
 		this.name = name;
 	}
 	
@@ -37,7 +37,7 @@ public class B {
 		System.out.println("Horse");
 		
 	}
-	public static void main(String[] args){
+	public void run(){
 		Animals a=null;
 		Horse h=null;
 		a = new Animals();

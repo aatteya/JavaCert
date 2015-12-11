@@ -27,7 +27,14 @@ enum CoffeeSize {
 class Coffee extends CoffeeTest1{
 	CoffeeSize size;
 	static CoffeeSize sSize;
-	public static void main(String [] args){
+	
+	
+}
+
+public class CoffeeTest1 {
+	private int x;
+	
+	public void run(){
 		Coffee drink1 = new Coffee();
 		drink1.size = CoffeeSize.BIG;
 		for(int i = 0; i<100; i++)
@@ -37,14 +44,7 @@ class Coffee extends CoffeeTest1{
 		Coffee drink2 = new Coffee();
 		drink2.size = CoffeeSize.OVERWHELMING;
 		
-		
-		
 	}
-	
-}
-
-public class CoffeeTest1 {
-	private int x;
 	
 	public void increment(){
 		if(x<10)

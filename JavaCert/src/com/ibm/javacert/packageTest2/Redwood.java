@@ -1,9 +1,7 @@
 package com.ibm.javacert.packageTest2;
 
 public class Redwood extends Tree {
-	public static void main(String[] args){
-		
-	}
+
 	public void go(){
 		go2(new Tree(), new Redwood());
 		go2((Redwood) new Tree(), new Redwood());
