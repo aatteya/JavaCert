@@ -21,7 +21,8 @@ public class TestAnimals {
 		
 		float f = 1234.3211f;
 		long l = 0x23f4L;
-		
+//		Animal anObj=null;		If not initialized then compiler will complain when using it
+//		anObj.eat();			but will run if initialized even with a null
 		ta.doStuff(a);
 		ta.doStuff(h);
 		
@@ -29,14 +30,23 @@ public class TestAnimals {
 		h.eat();
 		ah.eat();
 		h.eat("Apples");
-//		for(Animal animal: arr){
-//			animal.makeNoise();
-//			if(animal instanceof Dog2){
-//				Dog2 d = (Dog2) animal; 
-//				d.playDead();
-//			}
-//		}
-//
+		for(Animal animal: arr){
+			animal.makeNoise();
+			if(animal instanceof Dog2){
+				Dog2 d = (Dog2) animal; 
+				d.playDead();
+			}
+		}
+		char c = (char) -69;
+		
+		byte ab=8;
+		byte b=3;
+		byte cb = (byte)(ab + b);
+		cb +=23;
+		ab *=b;
+		
+		System.out.println(c);
+
 //		Board b = new Board(3);
 //		
 //		for(int i=0;i<3;i++){

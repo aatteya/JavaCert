@@ -15,6 +15,7 @@ public class Animals {
 	
 	private static String makeRandomName(){
 		String [] a = {"Fifi", "Hector", "Shiko", "Lolo", "Toto"};
+		byte x = -128;
 		return a[(int)(Math.random()*5)];
 	}
 	public void eat(){
