@@ -4,6 +4,24 @@ public class Animals {
 	
 	private static int numberOfAnimals;
 	private String name;
+	public static int [] staticArr;
+	public int [][] instanceArr;
+	
+	static{
+		staticArr = new int[5];
+		for(int i = 0; i<5; i++){
+			staticArr[i]= (i*2+5)/10;
+		}
+	}
+	{
+		instanceArr = new int[5][10];
+		for(int i=0;i<5;i++){
+			for(int j=0;j<10;j++){
+				instanceArr[i][j]= (j+i)*(j*i);
+			}
+		}
+	}
+
 	
 	public Animals(){
 		this(makeRandomName());
